@@ -3,7 +3,7 @@
 import * as React from 'react'
 
 import Flex from './flex'
-import Text from './text'
+import TextLink from './text-link'
 import SocialLinks from './social-links'
 
 export default function Footer() {
@@ -12,12 +12,16 @@ export default function Footer() {
       row
       tag="footer"
       style={{
-        margin: '60px 20px 80px',
+        margin: '40px 20px 60px',
         justifyContent: 'space-between',
-        alignContent: 'center',
       }}
     >
-      <Text>{'made by me :)'}</Text>
+      <TextLink
+        href="https://github.com/littlemooon/fredwright"
+        style={{ justifyContent: 'center' }}
+      >
+        {'made by me :)'}
+      </TextLink>
       <SocialLinks />
     </Flex>
   )

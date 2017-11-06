@@ -50,11 +50,11 @@ export default class Section extends React.Component<Props, State> {
     return (
       <Flex
         tag="section"
-        basis="350px"
+        basis="360px"
         shrink={1}
         grow={1}
         style={{
-          maxWidth: '350px',
+          maxWidth: '360px',
           margin: '20px',
           padding: '20px',
           boxSizing: 'border-box',

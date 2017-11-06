@@ -9,11 +9,11 @@ import SocialLinks from './social-links'
 export default function Header() {
   return (
     <Flex tag="header" style={{ margin: '20px' }}>
-      <Flex row style={{ justifyContent: 'space-between', margin: '80px 0 0' }}>
+      <Flex row style={{ justifyContent: 'space-between', margin: '60px 0 0' }}>
         <Text tag="h1">{'fred wright 1990'}</Text>
         <SocialLinks />
       </Flex>
-      <Text tag="h2" style={{ margin: '60px 0 40px' }}>
+      <Text tag="h2" style={{ margin: '40px 0 40px' }}>
         {'full stack lead developer'}
       </Text>
       <Text>{`Interested in optimising the output of all team members. 

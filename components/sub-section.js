@@ -13,7 +13,7 @@ type Props = {
 export default function SubSection({ title, children }: Props) {
   return (
     <Flex tag="article">
-      <Text tag="h3" style={{ margin: '10px 0 20px' }}>
+      <Text tag="h3" style={{ margin: '0 0 20px' }}>
         {title}
       </Text>
       {children}

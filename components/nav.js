@@ -13,7 +13,7 @@ type Props = {
 
 export default function Nav({ url }: Props) {
   return (
-    <Flex tag="nav" row style={{ margin: '80px 20px 20px' }}>
+    <Flex tag="nav" row style={{ margin: '60px 20px 20px' }}>
       <NavLink url={url} type="all" />
       <NavLink url={url} type="work" />
       <NavLink url={url} type="projects" />
