@@ -7,27 +7,21 @@ import TextLink from '../text-link'
 import Text from '../text'
 import SubSection from '../sub-section'
 
-const content = `- Leadership of agile development, product and design processes
-
-- Full-stack microservice development, including Node.js, React.js and Ruby on Rails
-
-- Architecture of three web applications from scratch, using Redux, Webpack and Babel`
+const content = ``
 
 export default function Backslash() {
   return (
     <SubSection title="Lead Developer">
       <Text>{content}</Text>
       <TextLinks>
-        <TextLink href="http://en.wikipedia.org/wiki/Java_(programming_language)">
-          {'Java'}
+        <TextLink href="http://facebook.github.io/react/">{'React'}</TextLink>
+        <TextLink href="http://facebook.github.io/flux/docs/overview.html">
+          {'Flux'}
         </TextLink>
-        <TextLink href="http://en.wikipedia.org/wiki/Css">{'CSS'}</TextLink>
-        <TextLink href="http://en.wikipedia.org/wiki/Unix_shell">
-          {'Unix shell'}
-        </TextLink>
-        <TextLink href="http://www-03.ibm.com/software/products/en/ibm-mq">
-          {'MQ'}
-        </TextLink>
+        <TextLink href="https://babeljs.io/">{'Babel'}</TextLink>
+        <TextLink href="http://webpack.github.io/">{'Webpack'}</TextLink>
+        <TextLink href="https://www.python.org/">{'Python'}</TextLink>
+        <TextLink href="http://flask.pocoo.org/">{'Flask'}</TextLink>
       </TextLinks>
     </SubSection>
   )

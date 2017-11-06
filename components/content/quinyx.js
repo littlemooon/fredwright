@@ -18,10 +18,13 @@ export default function Quinyx() {
     <SubSection title="Frontend Architect">
       <Text>{content}</Text>
       <TextLinks>
-        <TextLink href="http://en.wikipedia.org/wiki/SQL">{'SQL'}</TextLink>
-        <TextLink href="http://www.tableausoftware.com/products/desktop">
-          {'Tableau'}
+        <TextLink href="http://facebook.github.io/react/">{'React'}</TextLink>
+        <TextLink href="https://babeljs.io/">{'Babel'}</TextLink>
+        <TextLink href="http://webpack.github.io/">{'Webpack'}</TextLink>
+        <TextLink href="https://github.com/Yomguithereal/baobab">
+          {'Baobab'}
         </TextLink>
+        <TextLink href="https://github.com/gaearon/redux">{'Redux'}</TextLink>
       </TextLinks>
     </SubSection>
   )

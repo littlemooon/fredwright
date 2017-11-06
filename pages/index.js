@@ -26,15 +26,6 @@ export default function Index({ url }: Props) {
       <Nav url={url} />
       <Content url={url} />
       <Footer />
-      <style global jsx>{`
-        h1,
-        h2,
-        h3,
-        p,
-        a {
-          margin: 0;
-        }
-      `}</style>
     </div>
   )
 }

@@ -8,3 +8,11 @@ export type Url = {
     type?: SectionType,
   },
 }
+
+export type ContentType = {
+  type: SectionType,
+  title: string,
+  subtitle?: string,
+  Component: React.ComponentType<*>,
+  link?: string,
+}
