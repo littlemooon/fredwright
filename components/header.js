@@ -4,13 +4,19 @@ import * as React from 'react'
 
 import Flex from './flex'
 import Text from './text'
+import TextLink from './text-link'
 import SocialLinks from './social-links'
 
 export default function Header() {
   return (
     <Flex tag="header" style={{ margin: '20px' }}>
       <Flex row style={{ justifyContent: 'space-between', margin: '60px 0 0' }}>
-        <Text tag="h1">{'fred wright 1990'}</Text>
+        <Flex>
+          <Text tag="h1">{'fred wright 1990'}</Text>
+          <TextLink href="mailto:fredwright0@gmail.com">
+            {'fredwright0@gmail.com'}
+          </TextLink>
+        </Flex>
         <SocialLinks />
       </Flex>
       <Text tag="h2" style={{ margin: '40px 0 40px' }}>
