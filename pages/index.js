@@ -2,10 +2,13 @@
 
 import * as React from 'react'
 
-import type { Url } from '../types'
+import Head from 'next/head'
+
 import Header from '../components/header'
+import Nav from '../components/nav'
+import Content from '../components/content'
 import Footer from '../components/footer'
-import ErrorBoundary from '../components/error-boundary'
+import type { Url } from '../types/'
 
 type Props = {
   url: Url,
@@ -13,15 +16,25 @@ type Props = {
 
 export default function Index({ url }: Props) {
   return (
-    <ErrorBoundary>
-      <Header title={'HOME'} pathname={url.pathname} />
-      <p>{`oh g'mornin`}</p>
+    <div>
+      <Head>
+        <title>fredwright</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Header />
+      <Nav url={url} />
+      <Content url={url} />
       <Footer />
-      <style jsx>{`
-        p {
-          color: blueviolet;
+      <style global jsx>{`
+        h1,
+        h2,
+        h3,
+        p,
+        a {
+          margin: 0;
         }
       `}</style>
-    </ErrorBoundary>
+    </div>
   )
 }

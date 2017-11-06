@@ -2,71 +2,318 @@
 
 exports[`With Snapshot Testing Index renders 1`] = `
 <div
-  className="jsx-2738761292"
+  className="jsx-3632601274"
 >
-  <header
-    className="jsx-3825839400"
+  <main
+    className="jsx-3632601274"
   >
-    <h1
-      className="jsx-3825839400"
-    >
-      HOME
-    </h1>
-    <div
-      className="jsx-3581857328"
-    >
-      <ul
-        className="jsx-3825839400"
+    <header>
+      <h1
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "flexWrap": "nowrap",
+            "fontFamily": "monospace",
+            "margin": "20px",
+            "whiteSpace": "preLine",
+          }
+        }
       >
-        <li
-          className="jsx-3825839400"
+        fred wright 1990
+      </h1>
+      <h2
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "flexWrap": "nowrap",
+            "fontFamily": "monospace",
+            "margin": "20px",
+            "whiteSpace": "preLine",
+          }
+        }
+      >
+        full stack lead developer
+      </h2>
+      <p
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "flexWrap": "nowrap",
+            "fontFamily": "monospace",
+            "margin": "20px",
+            "whiteSpace": "preLine",
+          }
+        }
+      >
+        Interested in optimising the output of all team members. 
+
+      A lightweight agile methodology, close communication with Product and freedom to explore technologies are essential. 
+
+      Passion for working alongside all areas of the business; from sales, marketing and operations, to product, design and development. 
+
+      Its also fun to travel, meet and work with new people from different cultures.
+      </p>
+    </header>
+    <main>
+      <div
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+          }
+        }
+      >
+        <section
+          className="jsx-741316870"
         >
-          <a
-            className="jsx-3825839400"
-            href="/"
+          <h2
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "flexWrap": "nowrap",
+                "fontFamily": "monospace",
+                "margin": "20px",
+                "whiteSpace": "preLine",
+              }
+            }
+          >
+            Education 2008-2011
+          </h2>
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "flexWrap": "nowrap",
+              }
+            }
+          >
+            <article
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "flexWrap": "nowrap",
+                  "margin": "10px 0 0",
+                }
+              }
+            >
+              <h3
+                style={
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "flexWrap": "nowrap",
+                    "fontFamily": "monospace",
+                    "margin": "20px",
+                    "whiteSpace": "preLine",
+                  }
+                }
+              >
+                Bristol University, 2:1 BSc Mathematics and Philosophy
+              </h3>
+            </article>
+          </div>
+          <button
+            className="jsx-741316870"
             onClick={[Function]}
           >
-            home
-          </a>
-        </li>
-        <li
-          className="jsx-3825839400"
+            ...
+          </button>
+        </section>
+        <section
+          className="jsx-3691914583"
         >
-          <a
-            className="jsx-3825839400"
-            href="/about"
+          <h2
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "flexWrap": "nowrap",
+                "fontFamily": "monospace",
+                "margin": "20px",
+                "whiteSpace": "preLine",
+              }
+            }
+          >
+            SAAB AB 2011-2011
+          </h2>
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "flexWrap": "nowrap",
+              }
+            }
+          >
+            <article
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "flexWrap": "nowrap",
+                  "margin": "10px 0 0",
+                }
+              }
+            >
+              <h3
+                style={
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "flexWrap": "nowrap",
+                    "fontFamily": "monospace",
+                    "margin": "20px",
+                    "whiteSpace": "preLine",
+                  }
+                }
+              >
+                Capability Development Analyst
+              </h3>
+            </article>
+          </div>
+          <button
+            className="jsx-3691914583"
             onClick={[Function]}
           >
-            about
-          </a>
-        </li>
-      </ul>
-    </div>
-    <p
-      className="jsx-3825839400"
-    >
-      currently on: /
-    </p>
-  </header>
-  <p
-    className="jsx-3002987331"
-  >
-    oh g'mornin
-  </p>
-  <footer
-    className="jsx-548503616"
-  >
-    <button
-      className="jsx-548503616"
-      onClick={[Function]}
-    >
-      Trigger error
-    </button>
-    <p
-      className="jsx-548503616"
-    >
-      process.env.NAME: undefined
-    </p>
-  </footer>
+            ...
+          </button>
+        </section>
+        <section
+          className="jsx-3406788454"
+        >
+          <h2
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "flexWrap": "nowrap",
+                "fontFamily": "monospace",
+                "margin": "20px",
+                "whiteSpace": "preLine",
+              }
+            }
+          >
+            Alfa^ 2012-2015
+          </h2>
+          <div
+            style={
+              Object {
+                "display": "flex",
+                "flexDirection": "column",
+                "flexWrap": "nowrap",
+              }
+            }
+          >
+            <article
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "flexWrap": "nowrap",
+                  "margin": "10px 0 0",
+                }
+              }
+            >
+              <h3
+                style={
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "flexWrap": "nowrap",
+                    "fontFamily": "monospace",
+                    "margin": "20px",
+                    "whiteSpace": "preLine",
+                  }
+                }
+              >
+                Lead developer (on-site)
+              </h3>
+            </article>
+            <article
+              style={
+                Object {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "flexWrap": "nowrap",
+                  "margin": "10px 0 0",
+                }
+              }
+            >
+              <h3
+                style={
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "flexWrap": "nowrap",
+                    "fontFamily": "monospace",
+                    "margin": "20px",
+                    "whiteSpace": "preLine",
+                  }
+                }
+              >
+                Support contact and DBA (on-site)
+              </h3>
+              ## Support contact and DBA (on-site)
+
+- Organisation and collaboration with the client to perform simultaneous releases in the UK, Scandinavia and India
+
+- Enhancement of the DBA process and tooling
+
+- Management and execution of support requests
+              <div
+                style={
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "row",
+                    "flexWrap": "wrap",
+                  }
+                }
+              >
+                <a
+                  className="jsx-3359914563"
+                  href="http://en.wikipedia.org/wiki/IBM_System_i"
+                  target="blank"
+                >
+                  IBM iSeries
+                </a>
+              </div>
+            </article>
+          </div>
+          <button
+            className="jsx-3406788454"
+            onClick={[Function]}
+          >
+            ...
+          </button>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "flexWrap": "nowrap",
+            "fontFamily": "monospace",
+            "margin": "20px",
+            "whiteSpace": "preLine",
+          }
+        }
+      >
+        
+      - some
+      - footer
+      
+      </p>
+    </footer>
+  </main>
 </div>
 `;

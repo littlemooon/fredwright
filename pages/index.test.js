@@ -9,15 +9,16 @@ import Index from './index.js'
 
 describe('With Enzyme', () => {
   it('Index shows title', () => {
-    const x = mount(<Index url={{ pathname: '/' }} />)
-    expect(x).toIncludeText(`HOME`)
-    expect(x).toIncludeText(`oh g'mornin`)
+    const x = mount(<Index url={{ pathname: '/', query: {} }} />)
+    expect(x).toIncludeText(`fred wright`)
   })
 })
 
 describe('With Snapshot Testing', () => {
   it('Index renders', () => {
-    const component = renderer.create(<Index url={{ pathname: '/' }} />)
+    const component = renderer.create(
+      <Index url={{ pathname: '/', query: {} }} />
+    )
     const tree = component.toJSON()
     expect(tree).toMatchSnapshot()
   })

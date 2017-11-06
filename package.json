@@ -1,5 +1,5 @@
 {
-  "name": "next-starter",
+  "name": "fredwright",
   "version": "1.0.0",
   "license": "MIT",
   "author": "fredwright0@gmail.com",
@@ -78,5 +78,17 @@
       "<rootDir>/test-setup.js"
     ],
     "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js"
-  }
+  },
+  "keywords": [
+    "react",
+    "react16",
+    "nextjs",
+    "babel",
+    "jest",
+    "enzyme",
+    "flow",
+    "dotenv",
+    "eslint",
+    "prettier"
+  ]
 }
