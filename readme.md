@@ -19,7 +19,7 @@ npm run flow
 npm run flow:build
 ```
 
-### techonologies
+### technologies
 
 - react 16
 - nextjs
