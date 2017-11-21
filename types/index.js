@@ -9,9 +9,17 @@ export type Url = {
   },
 }
 
+type ContentLink = {
+  title: string,
+  href: string,
+}
+
 export type ContentType = {
   type: SectionType,
   title: string,
-  Component: React.ComponentType<*>,
   link?: string,
+  subtitle: string,
+  date?: string,
+  content: Array<string>,
+  links: Array<ContentLink>,
 }

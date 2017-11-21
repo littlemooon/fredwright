@@ -12,7 +12,7 @@ export default function Header() {
     <Flex tag="header" style={{ margin: '20px' }}>
       <Flex row style={{ justifyContent: 'space-between', margin: '30px 0 0' }}>
         <Flex>
-          <Text tag="h1">{'fred wright 1990'}</Text>
+          <Text tag="h1">{'fred wright'}</Text>
           <TextLink href="mailto:fredwright0@gmail.com">
             {'fredwright0@gmail.com'}
           </TextLink>

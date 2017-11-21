@@ -7,25 +7,19 @@ import { getRandomInt } from '../lib/utils'
 
 import Flex from './flex'
 import Text from './text'
+import TextLinks from './text-links'
 import TextLink from './text-link'
 import Link from './icons/link'
 import LinkedIn from './icons/linkedin'
 import Github from './icons/github'
-import type { SectionType } from '../types'
-
-type Props = {
-  title: React.Node,
-  children: React.Node,
-  type: SectionType,
-  link?: string,
-}
+import type { ContentType } from '../types'
 
 type State = {
   color: string,
   timeout: number,
 }
 
-export default class Section extends React.Component<Props, State> {
+export default class Section extends React.Component<ContentType, State> {
   mounted: boolean = false
 
   state = {
@@ -46,7 +40,7 @@ export default class Section extends React.Component<Props, State> {
   }
 
   render() {
-    const { title, children, link } = this.props
+    const { title, content, link, links, subtitle, date } = this.props
     const { color, timeout } = this.state
     return (
       <Flex
@@ -65,7 +59,9 @@ export default class Section extends React.Component<Props, State> {
         }}
       >
         <Flex row style={{ justifyContent: 'space-between' }}>
-          <Text tag="h2">{title}</Text>
+          <Text tag="h2" style={{ marginTop: '10px' }}>
+            {title}
+          </Text>
           {link && (
             <TextLink inList={false} href={link}>
               {link.includes('linkedin') ? (
@@ -78,7 +74,24 @@ export default class Section extends React.Component<Props, State> {
             </TextLink>
           )}
         </Flex>
-        {children}
+        <Text tag="h3" style={{ margin: 0 }}>
+          {subtitle}
+        </Text>
+        {date && <Text style={{ opacity: 0.6 }}>{date}</Text>}
+        {content.map(text => (
+          <Text key={text} style={{ marginBottom: 0 }}>
+            {text}
+          </Text>
+        ))}
+        {links && (
+          <TextLinks>
+            {links.map(({ href, title }) => (
+              <TextLink key={href} href={href}>
+                {title}
+              </TextLink>
+            ))}
+          </TextLinks>
+        )}
       </Flex>
     )
   }
