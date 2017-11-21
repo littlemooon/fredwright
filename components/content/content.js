@@ -9,6 +9,7 @@ import Dooer from './dooer'
 import Albacross from './albacross'
 import Backslash from './backslash'
 import Quinyx from './quinyx'
+import FredWright from './fredwright'
 
 const content: Array<ContentType> = [
   {
@@ -58,6 +59,12 @@ const content: Array<ContentType> = [
     title: 'University of Bristol 2008-2011',
     Component: Education,
     link: 'http://www.bristol.ac.uk/',
+  },
+  {
+    type: 'projects',
+    title: 'fredwright.me',
+    Component: FredWright,
+    link: 'http://www.github.com/littlemooon/fredwright',
   },
 ]
 

@@ -20,6 +20,7 @@ export default function NavLink({ type, url }: Props) {
     >
       <Text
         tag="a"
+        className="nav-link"
         style={{
           cursor: 'pointer',
           color: 'blue',
@@ -27,6 +28,11 @@ export default function NavLink({ type, url }: Props) {
           paddingRight: '15px',
         }}
       >
+        <style jsx global>{`
+          .nav-link:hover {
+            text-decoration: underline;
+          }
+        `}</style>
         {type.toUpperCase()}
       </Text>
     </Link>

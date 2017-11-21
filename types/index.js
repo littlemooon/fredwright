@@ -12,7 +12,6 @@ export type Url = {
 export type ContentType = {
   type: SectionType,
   title: string,
-  subtitle?: string,
   Component: React.ComponentType<*>,
   link?: string,
 }

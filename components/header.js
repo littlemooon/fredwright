@@ -10,7 +10,7 @@ import SocialLinks from './social-links'
 export default function Header() {
   return (
     <Flex tag="header" style={{ margin: '20px' }}>
-      <Flex row style={{ justifyContent: 'space-between', margin: '60px 0 0' }}>
+      <Flex row style={{ justifyContent: 'space-between', margin: '30px 0 0' }}>
         <Flex>
           <Text tag="h1">{'fred wright 1990'}</Text>
           <TextLink href="mailto:fredwright0@gmail.com">

@@ -5,14 +5,28 @@ import * as React from 'react'
 import Flex from './flex'
 import TextLink from './text-link'
 
+type Link = {
+  title: string,
+  href: string,
+}
+
+const links: Array<Link> = [
+  {
+    title: 'linkedin',
+    href: 'https://www.linkedin.com/in/fred-wright/',
+  },
+  { title: 'github', href: 'https://github.com/littlemooon' },
+  { title: 'twitter', href: 'https://twitter.com/littlemooon' },
+]
+
 export default function SocialLinks() {
   return (
-    <Flex>
-      <TextLink href="https://www.linkedin.com/in/fred-wright/">
-        {'linkedin'}
-      </TextLink>
-      <TextLink href="https://github.com/littlemooon">{'github'}</TextLink>
-      <TextLink href="https://twitter.com/littlemooon">{'twitter'}</TextLink>
+    <Flex alignItems="flex-end">
+      {links.map(({ title, href, Icon }) => (
+        <TextLink key={title} href={href}>
+          {title}
+        </TextLink>
+      ))}
     </Flex>
   )
 }

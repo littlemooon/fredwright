@@ -8,11 +8,13 @@ import { getRandomInt } from '../lib/utils'
 import Flex from './flex'
 import Text from './text'
 import TextLink from './text-link'
+import Link from './icons/link'
+import LinkedIn from './icons/linkedin'
+import Github from './icons/github'
 import type { SectionType } from '../types'
 
 type Props = {
   title: React.Node,
-  subtitle?: string,
   children: React.Node,
   type: SectionType,
   link?: string,
@@ -28,7 +30,7 @@ export default class Section extends React.Component<Props, State> {
 
   state = {
     color: getRandomColor(),
-    timeout: getRandomInt({ min: 15, max: 60 }),
+    timeout: getRandomInt({ min: 10, max: 30 }),
   }
 
   componentDidMount = () => {
@@ -44,9 +46,8 @@ export default class Section extends React.Component<Props, State> {
   }
 
   render() {
-    const { title, children, link, subtitle } = this.props
+    const { title, children, link } = this.props
     const { color, timeout } = this.state
-
     return (
       <Flex
         tag="section"
@@ -63,19 +64,17 @@ export default class Section extends React.Component<Props, State> {
           transition: `background-color ${timeout}s`,
         }}
       >
-        <Flex
-          row
-          style={{ justifyContent: 'space-between', margin: '0 0 20px' }}
-        >
-          <Flex>
-            <Text tag="h2" style={{ margin: '0 0 10px' }}>
-              {title}
-            </Text>
-            {subtitle && <Text>{`- ${subtitle}`}</Text>}
-          </Flex>
+        <Flex row style={{ justifyContent: 'space-between' }}>
+          <Text tag="h2">{title}</Text>
           {link && (
             <TextLink inList={false} href={link}>
-              {'link'}
+              {link.includes('linkedin') ? (
+                <LinkedIn title={link} />
+              ) : link.includes('github') ? (
+                <Github title={link} />
+              ) : (
+                <Link title={link} />
+              )}
             </TextLink>
           )}
         </Flex>
