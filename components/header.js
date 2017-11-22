@@ -34,15 +34,20 @@ export default function Header() {
         <SocialLinks />
       </Flex>
       <Text tag="h2" style={{ margin: `0 0 ${s.large}` }}>
-        {'full stack lead developer'}
+        {'remote full stack developer'}
       </Text>
-      <Text>{`Interested in optimising the output of all team members. 
+      <Text
+      >{`After gathering many years of experience in high pressure, responsible positions I have decided to begin travelling and working as a remote consultant.
 
-      A lightweight agile methodology, close communication with Product and freedom to explore technologies are essential. 
+This allows me to utilise the broad knowledge gained while working with the latest technologies, in numerous industries, and with all areas of a business.
 
-      Passion for working alongside all areas of the business; from sales, marketing and operations, to product, design and development. 
+Previous responsibilities have included running development and product departments - while working directly with founders and investors on product strategy, growth strategy, culture and marketing.
 
-      Its also fun to travel, meet and work with new people from different cultures.`}</Text>
+While this has been incredibly interesting and beneficial, my real passion lies in delivering products of extreme quality.
+
+Contracting remotely opens the possibility to develop next generation products, not hindered by naturally slower moving, larger teams.
+
+Primary skills and interests are in Javascript, React and Node.`}</Text>
     </Flex>
   )
 }
