@@ -14,6 +14,10 @@ type Link = {
 
 const links: Array<Link> = [
   {
+    title: 'fredwright0@gmail.com',
+    href: 'mailto:fredwright0@gmail.com',
+  },
+  {
     title: 'linkedin',
     href: 'https://www.linkedin.com/in/fred-wright/',
   },
@@ -23,7 +27,7 @@ const links: Array<Link> = [
 
 export default function SocialLinks() {
   return (
-    <Flex alignItems="flex-end">
+    <Flex>
       {links.map(({ title, href, Icon }, i) => (
         <TextLink
           key={title}

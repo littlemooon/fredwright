@@ -8,7 +8,7 @@ import type { Url } from '../types'
 
 import NavLink from './nav-link'
 import Flex from './flex'
-import TextLink from './text-link'
+import Text from './text'
 
 type Props = {
   url: Url,
@@ -23,7 +23,20 @@ export default function Nav({ url }: Props) {
       <NavLink url={url} type="work" />
       <NavLink url={url} type="projects" />
       <NavLink url={url} type="education" />
-      <TextLink onClick={onClick}>{'SAVE_AS_PDF'}</TextLink>
+      <Text
+        style={{
+          cursor: 'pointer',
+          height: '20px',
+          lineHeight: '23px',
+          textDecoration: null,
+          padding: `0 ${s.tiny} 0`,
+          margin: `0 ${s.tiny} 0`,
+          color: null,
+        }}
+        onClick={onClick}
+      >
+        {'SAVE_AS_PDF'}
+      </Text>
     </Flex>
   )
 }

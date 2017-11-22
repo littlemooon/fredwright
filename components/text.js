@@ -26,6 +26,7 @@ export default function Text({
         whiteSpace: 'pre-line',
         fontFamily: tag === 'p' ? 'monospace' : 'monospace',
         margin: 0,
+        lineHeight: 1.1,
         ...style,
       }}
       {...props}

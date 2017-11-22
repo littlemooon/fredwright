@@ -48,7 +48,8 @@ export default function Index({ url }: Props) {
       <style jsx global>{`
         body {
           padding: 0;
-          margin: 0;
+          margin: 0 auto;
+          max-width: 1400px;
         }
       `}</style>
     </div>

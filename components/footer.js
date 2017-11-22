@@ -6,16 +6,13 @@ import s from '../lib/spacing'
 
 import Flex from './flex'
 import TextLink from './text-link'
-import SocialLinks from './social-links'
 
 export default function Footer() {
   return (
     <Flex
-      row
       tag="footer"
       style={{
-        margin: `${s.large} 0 0`,
-        justifyContent: 'space-between',
+        margin: `${s.medium} 0 0`,
       }}
     >
       <TextLink
@@ -24,7 +21,6 @@ export default function Footer() {
       >
         {'made by me :)'}
       </TextLink>
-      <SocialLinks />
     </Flex>
   )
 }

@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "fredwright0@gmail.com",
-  "alias": "fredwright.me",
+  "now": {
+    "alias": "fredwright.me"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "deploy": "now && now alias",
     "test": "jest",
     "test:watch": "jest --watch",
     "flow": "flow",

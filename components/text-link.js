@@ -10,15 +10,9 @@ type Props = {
   children: React.Node,
   style?: {},
   href?: string,
-  onClick?: (SyntheticEvent<*>) => void,
 }
 
-export default function TextLink({
-  href,
-  onClick,
-  children,
-  style = {},
-}: Props) {
+export default function TextLink({ href, children, style = {} }: Props) {
   return (
     <Text
       tag="a"
@@ -30,7 +24,6 @@ export default function TextLink({
         cursor: 'pointer',
         ...style,
       }}
-      onClick={onClick}
     >
       <style jsx global>{`
         .text-link {
