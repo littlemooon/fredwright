@@ -2,6 +2,8 @@
 
 import * as React from 'react'
 
+import s from '../lib/spacing'
+
 import Flex from './flex'
 import TextLink from './text-link'
 
@@ -22,8 +24,12 @@ const links: Array<Link> = [
 export default function SocialLinks() {
   return (
     <Flex alignItems="flex-end">
-      {links.map(({ title, href, Icon }) => (
-        <TextLink key={title} href={href}>
+      {links.map(({ title, href, Icon }, i) => (
+        <TextLink
+          key={title}
+          href={href}
+          style={i !== links.length - 1 ? { padding: `0 0 ${s.tiny}` } : {}}
+        >
           {title}
         </TextLink>
       ))}

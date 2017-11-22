@@ -2,6 +2,8 @@
 
 import * as React from 'react'
 
+import s from '../lib/spacing'
+
 import Flex from './flex'
 
 type Props = {
@@ -10,7 +12,7 @@ type Props = {
 
 export default function TextLinks({ children }: Props) {
   return (
-    <Flex row wrap style={{ margin: '20px 0 0' }}>
+    <Flex row wrap style={{ margin: `${s.medium} 0 0` }}>
       {children}
     </Flex>
   )

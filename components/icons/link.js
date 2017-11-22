@@ -8,7 +8,7 @@ type Props = {
   title: string,
 }
 
-export default function LinkedIn({ title }: Props) {
+export default function Link({ title }: Props) {
   return (
     <Icon hoverColor="#4078c0" viewBox="0 0 100 52" title={title}>
       <path d="M47.807,33.138c0.008-0.009,0.016-0.019,0.024-0.026c-0.009,0.007-0.018,0.015-0.026,0.023  C47.805,33.136,47.806,33.137,47.807,33.138z" />

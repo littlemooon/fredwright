@@ -11,6 +11,7 @@ import Section from '../components/section'
 import Footer from '../components/footer'
 
 import content from '../lib/content'
+import s from '../lib/spacing'
 
 import type { Url, ContentType } from '../types/'
 
@@ -21,7 +22,7 @@ type Props = {
 export default function Index({ url }: Props) {
   const queryType = url.query.type
   return (
-    <div>
+    <div style={{ padding: s.large }}>
       <Head>
         <title>fredwright</title>
         <meta charSet="utf-8" />
@@ -39,6 +40,12 @@ export default function Index({ url }: Props) {
           ))}
       </Flex>
       <Footer />
+      <style jsx global>{`
+        body {
+          padding: 0;
+          margin: 0;
+        }
+      `}</style>
     </div>
   )
 }

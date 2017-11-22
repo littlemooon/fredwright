@@ -2,6 +2,8 @@
 
 import * as React from 'react'
 
+import s from '../lib/spacing'
+
 import Flex from './flex'
 import TextLink from './text-link'
 import SocialLinks from './social-links'
@@ -12,7 +14,7 @@ export default function Footer() {
       row
       tag="footer"
       style={{
-        margin: '40px 20px 60px',
+        margin: `${s.large} 0 0`,
         justifyContent: 'space-between',
       }}
     >

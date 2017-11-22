@@ -3,6 +3,8 @@
 import * as React from 'react'
 import Link from 'next/link'
 
+import s from '../lib/spacing'
+
 import Text from './text'
 import type { Url, SectionType } from '../types'
 
@@ -25,7 +27,7 @@ export default function NavLink({ type, url }: Props) {
           cursor: 'pointer',
           color: 'blue',
           textDecoration: active ? 'underline' : null,
-          paddingRight: '15px',
+          padding: `0 ${s.medium} 0 0`,
         }}
       >
         <style jsx global>{`

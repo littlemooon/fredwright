@@ -1,5 +1,5 @@
 
-# fred-wright
+# fredwright
 
 Personal CV and resume website
 

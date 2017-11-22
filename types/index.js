@@ -9,7 +9,7 @@ export type Url = {
   },
 }
 
-type ContentLink = {
+type Tech = {
   title: string,
   href: string,
 }
@@ -17,9 +17,9 @@ type ContentLink = {
 export type ContentType = {
   type: SectionType,
   title: string,
-  link?: string,
+  links?: Array<string>,
   subtitle: string,
   date?: string,
   content: Array<string>,
-  links: Array<ContentLink>,
+  tech?: Array<Tech>,
 }
