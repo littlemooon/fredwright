@@ -26,14 +26,8 @@ export default function Section({
   return (
     <WithColor type={type} opacity={0.2}>
       {({ color, timeout }) => (
-        <Flex
-          tag="section"
-          basis={s.section}
-          shrink={1}
-          grow={1}
+        <div
           style={{
-            maxWidth: s.section,
-            margin: `0 ${s.medium} ${s.medium} 0`,
             padding: `${s.medium} ${s.medium}`,
             boxSizing: 'border-box',
             overflow: 'hidden',
@@ -97,7 +91,7 @@ export default function Section({
               ))}
             </TextLinks>
           )}
-        </Flex>
+        </div>
       )}
     </WithColor>
   )

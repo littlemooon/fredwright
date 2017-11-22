@@ -12,7 +12,7 @@ export default function Footer() {
     <Flex
       tag="footer"
       style={{
-        margin: `${s.medium} 0 0`,
+        margin: `${s.huge} 0 ${s.large}`,
       }}
     >
       <TextLink

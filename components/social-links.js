@@ -1,6 +1,7 @@
 // @flow
 
 import * as React from 'react'
+import Router from 'next/router'
 
 import s from '../lib/spacing'
 
@@ -22,21 +23,26 @@ const links: Array<Link> = [
     href: 'https://www.linkedin.com/in/fred-wright/',
   },
   { title: 'github', href: 'https://github.com/littlemooon' },
-  { title: 'twitter', href: 'https://twitter.com/littlemooon' },
 ]
+
+const onClick = () => Router.push('/').then(window.print)
 
 export default function SocialLinks() {
   return (
     <Flex>
-      {links.map(({ title, href, Icon }, i) => (
-        <TextLink
-          key={title}
-          href={href}
-          style={i !== links.length - 1 ? { padding: `0 0 ${s.tiny}` } : {}}
-        >
+      {links.map(({ title, href, Icon }) => (
+        <TextLink key={title} href={href} style={{ padding: `0 0 ${s.tiny}` }}>
           {title}
         </TextLink>
       ))}
+      <TextLink
+        style={{
+          cursor: 'pointer',
+        }}
+        onClick={onClick}
+      >
+        {'save_as_pdf'}
+      </TextLink>
     </Flex>
   )
 }

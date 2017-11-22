@@ -10,15 +10,22 @@ type Props = {
   children: React.Node,
   style?: {},
   href?: string,
+  onClick?: (SyntheticEvent<*>) => void,
 }
 
-export default function TextLink({ href, children, style = {} }: Props) {
+export default function TextLink({
+  href,
+  children,
+  onClick,
+  style = {},
+}: Props) {
   return (
     <Text
       tag="a"
       className="text-link"
       href={href}
       title={cleanHref(href)}
+      onClick={onClick}
       style={{
         color: 'blue',
         cursor: 'pointer',

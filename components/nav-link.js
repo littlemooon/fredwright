@@ -35,7 +35,7 @@ export default function NavLink({ type, url }: Props) {
           lineHeight: '23px',
           background: active ? color || getColors(0.15).grey : null,
           textDecoration: null,
-          padding: `0 ${s.tiny} 0`,
+          padding: `0 ${s.small} 0`,
           margin: hasType ? `0 ${s.tiny} 0` : `0 ${s.tiny} 0 0`,
         }}
       >

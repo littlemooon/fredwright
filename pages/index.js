@@ -6,7 +6,7 @@ import Head from 'next/head'
 
 import Header from '../components/header'
 import Nav from '../components/nav'
-import Flex from '../components/flex'
+import Grid from '../components/grid'
 import Section from '../components/section'
 import Footer from '../components/footer'
 
@@ -22,7 +22,7 @@ type Props = {
 export default function Index({ url }: Props) {
   const queryType = url.query.type
   return (
-    <div style={{ padding: s.large }}>
+    <div>
       <Head>
         <title>fredwright</title>
         <meta charSet="utf-8" />
@@ -35,7 +35,7 @@ export default function Index({ url }: Props) {
       </Head>
       <Header />
       <Nav url={url} />
-      <Flex tag="main" row wrap>
+      <Grid tag="main">
         {content
           .filter(
             ({ type }: ContentType): boolean => !queryType || type === queryType
@@ -43,13 +43,13 @@ export default function Index({ url }: Props) {
           .map(({ title, ...props }: ContentType): React.Node => (
             <Section key={title} title={title} {...props} />
           ))}
-      </Flex>
+      </Grid>
       <Footer />
       <style jsx global>{`
         body {
-          padding: 0;
+          padding: ${s.medium};
           margin: 0 auto;
-          max-width: 1400px;
+          max-width: ${parseInt(s.section) * 3 + parseInt(s.medium) * 2}px;
         }
       `}</style>
     </div>
