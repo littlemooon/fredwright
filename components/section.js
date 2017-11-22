@@ -40,7 +40,15 @@ export default class Section extends React.Component<ContentType, State> {
   }
 
   render() {
-    const { title, content, links, tech, subtitle, date } = this.props
+    const {
+      title,
+      content,
+      links,
+      tech,
+      subtitle,
+      dateFrom,
+      dateTo,
+    } = this.props
     const { color, timeout } = this.state
     return (
       <Flex
@@ -51,8 +59,7 @@ export default class Section extends React.Component<ContentType, State> {
         style={{
           maxWidth: s.section,
           margin: `0 ${s.medium} ${s.medium} 0`,
-          padding: `${s.small} ${s.medium} ${parseInt(s.medium) -
-            parseInt(s.tiny)}px`,
+          padding: `${s.medium} ${s.medium}`,
           boxSizing: 'border-box',
           overflow: 'hidden',
           backgroundColor: color,
@@ -63,7 +70,7 @@ export default class Section extends React.Component<ContentType, State> {
           row
           style={{
             justifyContent: 'space-between',
-            margin: `${s.small} 0 ${s.medium}`,
+            margin: `0 0 ${s.medium}`,
           }}
         >
           <Text tag="h2" style={{ marginTop: 0 }}>
@@ -89,11 +96,9 @@ export default class Section extends React.Component<ContentType, State> {
         <Text tag="h3" style={{ margin: 0 }}>
           {subtitle}
         </Text>
-        {date && (
-          <Text style={{ opacity: 0.6, margin: `0 0 ${s.medium}` }}>
-            {date}
-          </Text>
-        )}
+        <Text style={{ opacity: 0.6, margin: `0 0 ${s.medium}` }}>
+          {[dateFrom, dateTo].filter(Boolean).join('-')}
+        </Text>
         {content.map((text, i) => (
           <Text
             key={text}

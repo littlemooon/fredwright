@@ -19,7 +19,8 @@ export type ContentType = {
   title: string,
   links?: Array<string>,
   subtitle: string,
-  date?: string,
+  dateFrom: string,
+  dateTo?: string,
   content: Array<string>,
   tech?: Array<Tech>,
 }
