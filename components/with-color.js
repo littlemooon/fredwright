@@ -22,7 +22,7 @@ export default class WithColor extends React.Component<Props, State> {
 
   state = {
     color: getRandomColor(this.props.type, this.props.opacity),
-    timeout: getRandomInt({ min: 30, max: 90 }),
+    timeout: getRandomInt({ min: 20, max: 60 }),
   }
 
   componentDidMount = () => {
