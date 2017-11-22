@@ -22,7 +22,6 @@ export default function TextLink({
   return (
     <Text
       tag="a"
-      target="blank"
       className="text-link"
       href={href}
       title={cleanHref(href)}
