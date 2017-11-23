@@ -28,7 +28,14 @@ export default function Header() {
           maxWidth: `${parseInt(s.section) * 2 + parseInt(s.medium)}px`,
         }}
       >
-        <Text tag="h2" style={{ height: '30px', margin: `0 0 ${s.large} 0` }}>
+        <Text
+          tag="h2"
+          style={{
+            height: '30px',
+            margin: `0 0 ${s.large} 0`,
+            justifyContent: 'center',
+          }}
+        >
           {'full stack lead developer'}
         </Text>
         <Text>

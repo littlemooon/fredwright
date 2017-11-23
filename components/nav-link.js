@@ -16,7 +16,7 @@ type Props = {
 
 export default function NavLink({ type, url }: Props) {
   const queryType = url.query.type
-  const color = getColorType(type, 0.3)[0]
+  const color = getColorType(type, 0.2)[0]
   const active = type === queryType || (type === 'all' && !queryType)
   const hasType = type !== 'all'
   const href =
@@ -30,10 +30,10 @@ export default function NavLink({ type, url }: Props) {
           cursor: 'pointer',
           borderBottom: hasType
             ? `2px solid ${color}`
-            : active ? `2px solid ${getColors(0.3).grey}` : null,
+            : active ? `2px solid ${getColors(0.2).grey}` : null,
           height: '20px',
           lineHeight: '23px',
-          background: active ? color || getColors(0.15).grey : null,
+          background: active ? color || getColors(0.1).grey : null,
           textDecoration: null,
           padding: `0 ${s.small} 0`,
           margin: hasType ? `0 ${s.tiny} 0` : `0 ${s.tiny} 0 0`,

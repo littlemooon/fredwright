@@ -9,6 +9,7 @@ import Nav from '../components/nav'
 import Grid from '../components/grid'
 import Section from '../components/section'
 import Footer from '../components/footer'
+import Provider from '../components/provider'
 
 import content from '../lib/content'
 import s from '../lib/spacing'
@@ -22,9 +23,9 @@ type Props = {
 export default function Index({ url }: Props) {
   const queryType = url.query.type
   return (
-    <div>
+    <Provider>
       <Head>
-        <title>fredwright.me</title>
+        <title>fred wright</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
@@ -52,6 +53,6 @@ export default function Index({ url }: Props) {
           max-width: ${parseInt(s.section) * 3 + parseInt(s.medium) * 2}px;
         }
       `}</style>
-    </div>
+    </Provider>
   )
 }
