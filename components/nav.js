@@ -15,7 +15,7 @@ type Props = {
 
 export default function Nav({ url }: Props) {
   return (
-    <Grid style={{ margin: `${s.large} 0` }}>
+    <Grid style={{ margin: `0 0 ${s.large}` }}>
       <Flex tag="nav" row wrap>
         <NavLink url={url} type="all" />
         <NavLink url={url} type="work" />

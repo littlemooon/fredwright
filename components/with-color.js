@@ -2,12 +2,12 @@
 
 import * as React from 'react'
 
-import type { SectionType } from '../types'
+import type { CardType } from '../types'
 import { getRandomColor } from '../lib/colors'
 import { getRandomInt } from '../lib/utils'
 
 type Props = {
-  type: SectionType,
+  type: CardType,
   opacity?: number,
   children: ({ color: string, timeout: number }) => React.Node,
 }

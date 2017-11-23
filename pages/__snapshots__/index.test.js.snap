@@ -67,7 +67,7 @@ exports[`With Snapshot Testing Index renders 1`] = `
           }
         }
       >
-        <section
+        <card
           className="jsx-741316870"
         >
           <h2
@@ -125,8 +125,8 @@ exports[`With Snapshot Testing Index renders 1`] = `
           >
             ...
           </button>
-        </section>
-        <section
+        </card>
+        <card
           className="jsx-3691914583"
         >
           <h2
@@ -184,8 +184,8 @@ exports[`With Snapshot Testing Index renders 1`] = `
           >
             ...
           </button>
-        </section>
-        <section
+        </card>
+        <card
           className="jsx-3406788454"
         >
           <h2
@@ -292,7 +292,7 @@ exports[`With Snapshot Testing Index renders 1`] = `
           >
             ...
           </button>
-        </section>
+        </card>
       </div>
     </main>
     <footer>

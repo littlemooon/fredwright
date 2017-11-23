@@ -7,10 +7,10 @@ import { getColors, getColorType } from '../lib/colors'
 import s from '../lib/spacing'
 
 import Text from './text'
-import type { Url, SectionType } from '../types'
+import type { Url, CardType } from '../types'
 
 type Props = {
-  type: SectionType,
+  type: CardType,
   url: Url,
 }
 

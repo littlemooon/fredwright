@@ -5,7 +5,7 @@ import * as React from 'react'
 import Flex from './flex'
 
 type Props = {
-  tag?: 'h1' | 'h2' | 'h3' | 'p' | 'a',
+  tag?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'p' | 'a',
   children: React.Node,
   style?: {},
   className?: string,

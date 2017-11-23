@@ -4,6 +4,7 @@ import * as React from 'react'
 import Router from 'next/router'
 
 import s from '../lib/spacing'
+import { cleanHref } from '../lib/utils'
 
 import Flex from './flex'
 import TextLink from './text-link'
@@ -25,24 +26,30 @@ const links: Array<Link> = [
   { title: 'github', href: 'https://github.com/littlemooon' },
 ]
 
-const onClick = () => Router.push('/').then(window.print)
+const onClick = () => Router.push('/print').then(window.print)
 
-export default function SocialLinks() {
+type Props = {
+  printable?: boolean,
+}
+
+export default function SocialLinks({ printable }: Props) {
   return (
     <Flex>
       {links.map(({ title, href, Icon }) => (
-        <TextLink key={title} href={href} style={{ padding: `0 0 ${s.tiny}` }}>
-          {title}
+        <TextLink key={href} href={href} style={{ padding: `0 0 ${s.tiny}` }}>
+          {printable ? cleanHref(href) : title}
         </TextLink>
       ))}
-      <TextLink
-        style={{
-          cursor: 'pointer',
-        }}
-        onClick={onClick}
-      >
-        {'save_as_pdf'}
-      </TextLink>
+      {printable ? null : (
+        <TextLink
+          style={{
+            cursor: 'pointer',
+          }}
+          onClick={onClick}
+        >
+          {'save_as_pdf'}
+        </TextLink>
+      )}
     </Flex>
   )
 }

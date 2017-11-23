@@ -1,11 +1,11 @@
 // @flow
 
-export type SectionType = 'all' | 'education' | 'work' | 'projects'
+export type CardType = 'all' | 'education' | 'work' | 'projects'
 
 export type Url = {
   pathname: string,
   query: {
-    type?: SectionType,
+    type?: CardType,
   },
 }
 
@@ -15,7 +15,7 @@ type Tech = {
 }
 
 export type ContentType = {
-  type: SectionType,
+  type: CardType,
   title: string,
   links?: Array<string>,
   subtitle: string,
@@ -23,4 +23,5 @@ export type ContentType = {
   dateTo?: string,
   content: Array<string>,
   tech?: Array<Tech>,
+  printable?: boolean,
 }

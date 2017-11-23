@@ -13,7 +13,7 @@ import TextLink from './text-link'
 import Link from './icons/link'
 import Github from './icons/github'
 
-export default function Section({
+export default function Card({
   type,
   title,
   content,

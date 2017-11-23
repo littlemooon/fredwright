@@ -2,16 +2,15 @@
 
 import * as React from 'react'
 
-import Head from 'next/head'
-
+import Head from '../components/head'
 import Header from '../components/header'
 import Nav from '../components/nav'
 import Grid from '../components/grid'
-import Section from '../components/section'
+import Card from '../components/card'
 import Footer from '../components/footer'
 import Provider from '../components/provider'
 
-import content from '../lib/content'
+import { cardContent } from '../lib/content'
 import s from '../lib/spacing'
 
 import type { Url, ContentType } from '../types/'
@@ -24,25 +23,16 @@ export default function Index({ url }: Props) {
   const queryType = url.query.type
   return (
     <Provider>
-      <Head>
-        <title>fred wright</title>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link
-          rel="shortcut icon"
-          type="image/x-icon"
-          href="/static/favicon.ico"
-        />
-      </Head>
+      <Head />
       <Header />
       <Nav url={url} />
       <Grid tag="main">
-        {content
+        {cardContent
           .filter(
             ({ type }: ContentType): boolean => !queryType || type === queryType
           )
           .map(({ title, ...props }: ContentType): React.Node => (
-            <Section key={title} title={title} {...props} />
+            <Card key={title} title={title} {...props} />
           ))}
       </Grid>
       <Footer />
@@ -50,7 +40,7 @@ export default function Index({ url }: Props) {
         body {
           padding: ${s.medium};
           margin: 0 auto;
-          max-width: ${parseInt(s.section) * 3 + parseInt(s.medium) * 2}px;
+          max-width: ${parseInt(s.card) * 3 + parseInt(s.medium) * 2}px;
         }
       `}</style>
     </Provider>
