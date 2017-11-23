@@ -24,7 +24,7 @@ export default function Index({ url }: Props) {
   return (
     <div>
       <Head>
-        <title>fredwright</title>
+        <title>fredwright.me</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link

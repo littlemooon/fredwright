@@ -34,7 +34,7 @@ export default function Header() {
         <Text>
           {`After gathering many years of experience in high pressure positions I have decided to begin working as a remote consultant.
 
-This allows me to utilise the broad knowledge gained working with the latest technologies, in Flexerse industries, and with all areas of a business.
+This allows me to utilise the broad knowledge gained working with the latest technologies, in diverse industries, and with all areas of a business.
 
 While this has been incredibly interesting and beneficial, my real passion lies in delivering products of extreme quality.
 
