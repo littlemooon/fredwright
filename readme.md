@@ -3,6 +3,8 @@
 
 Personal CV and resume website
 
+![screenshot-2017-11-27 fred wright](https://user-images.githubusercontent.com/2467416/33268457-9b99f7d4-d37d-11e7-8b65-005acd53e085.png)
+
 ### scripts
 
 ```bash
