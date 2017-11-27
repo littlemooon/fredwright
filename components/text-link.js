@@ -26,6 +26,7 @@ export default function TextLink({
       href={href}
       title={cleanHref(href)}
       onClick={onClick}
+      target="blank"
       style={{
         color: 'blue',
         cursor: 'pointer',
