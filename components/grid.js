@@ -12,7 +12,7 @@ export default function Grid({ children, tag = 'div', style = {} }: Props) {
     <Tag
       style={{
         display: 'grid',
-        gridTemplateColumns: `repeat(auto-fit, ${s.card})`,
+        gridTemplateColumns: `repeat(auto-fit, minmax(auto, ${s.card}))`,
         gridColumnGap: s.medium,
         gridRowGap: s.medium,
         ...style,

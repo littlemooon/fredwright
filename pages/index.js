@@ -40,7 +40,9 @@ export default function Index({ url }: Props) {
         body {
           padding: ${s.medium};
           margin: 0 auto;
-          max-width: ${parseInt(s.card) * 3 + parseInt(s.medium) * 2}px;
+          width: 100%;
+          box-sizing: border-box;
+          max-width: ${parseInt(s.card) * 3 + parseInt(s.medium) * 4}px;
         }
       `}</style>
     </Provider>
